@@ -144,21 +144,17 @@ a:hover {
   align-items: center !important;
   text-align: center;
   font-size: 300%;
-
+margin-bottom: 8%;
   font-family: 'Bungee Shade', sans-serif;
 }
 
-.blog{
-margin-top: 8%;
-
-
-}
 
 .blogNoticias{
 border: 2px solid #3E33FF;
 color: aliceblue;
 padding: 3%;
 margin: 4%;
+
 
 }
 
@@ -448,4 +444,22 @@ footer a {
   color: aliceblue;
   text-decoration: none;
 margin: 1% 0 2% 0;
+}
+
+
+.curtir{
+display: flex;
+flex-direction: row;
+
+}
+
+.curtir h2{
+padding-top: 1%;
+
+}
+
+.curtir img {
+
+  width: 3%;
+  justify-content: end;
 }

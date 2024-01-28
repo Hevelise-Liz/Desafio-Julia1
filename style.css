@@ -3,14 +3,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+
+  background: black;
+}
 
 .logo {
-  width: 12%;
+  width: 10%;
   padding: 0.5%;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+  margin: 2%;
 }
 
 .menu {
   list-style: none;
+  width: 30%;
+  font-size: 20px;
+  font-family: "VT323", monospace;
 }
 
 li {
@@ -21,13 +36,89 @@ ul li a {
   list-style: none;
   color: aliceblue;
   text-decoration: none;
+  padding: 2%;
 }
 
 header {
   width: 100%;
-  background: linear-gradient(to right, #1f1f21, #12324f, #b25e6f);
+  background: linear-gradient(to right, #1f1f21, #005596, #b25e6f);
   display: flex;
   flex-direction: row;
+}
+
+.bordaIntroducao {
+  display: flex;
+ flex-wrap: wrap;
+ flex-direction: row;
+
+  
+}
+
+
+
+.introducao {
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 8% 8% 8% 8%;
+  padding: 0 0 0 2%;
+
+  font-size: 300%;
+  font-family: "VT323", monospace;
+  text-transform: uppercase;
+
+  
+  box-shadow: #005596  0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, #b25e6f  10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, #005596 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, #b25e6f  30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, #005596 40px -40px;
+
+
+
+}
+
+
+.introducao p {
+
+width: 40%;
+
+}
+
+.introducao img {
+
+  width: 40%;
+}
+
+p a {
+
+  list-style: none;
+  color: #b25e6f;
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: #005596; 
+}
+
+
+
+.texto1 {
+  background-image: url("./img/26021-kosmos-astronomicheskij_obekt-tumannost-galaktika-vselennaya-3840x2160.jpg");
+
+
+
+  background-size: cover;
+  height: 100%;
+  color: aliceblue;
+  padding: 10%;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center;
+  font-size: 300%;
+
+  font-family: 'Bungee Shade', sans-serif;
 }
 
 .img {
@@ -40,37 +131,33 @@ header {
   width: 100%;
 }
 
-.texto1 {
-  background-image: url("./img/26021-kosmos-astronomicheskij_obekt-tumannost-galaktika-vselennaya-3840x2160.jpg");
-  background-size: cover;
-
-  height: 100%;
-  color: aliceblue;
-  padding: 10% 0px 10% 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 400%;
-
-  font-family: "VT323", monospace;
-}
-
 .texto2 {
   background-image: url("./img/cosmos2.jpg");
+
+
   background-size: cover;
   height: 100%;
   color: aliceblue;
   padding: 10%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center !important;
+  align-items: center !important;
   text-align: center;
-  font-size: 400%;
+  font-size: 300%;
 
-  font-family: "VT323", monospace;
+  font-family: 'Bungee Shade', sans-serif;
 }
 
+.blog{
 
 
 
+}
 
+.blogNoticias{
+border: 2px solid #005596;
+color: aliceblue;
+padding: 3%;
+margin: 2%;
+border-radius: 10px;
+}

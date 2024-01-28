@@ -442,3 +442,10 @@ footer {
   width: 30px;
   height: 30px;
 }
+
+footer a {
+  margin: 0 1% 0 1%;
+  color: aliceblue;
+  text-decoration: none;
+margin: 1% 0 2% 0;
+}

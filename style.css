@@ -3,8 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-
+body {
   background: black;
 }
 
@@ -26,12 +25,10 @@ nav {
   width: 25%;
   font-size: 20px;
   font-family: "VT323", monospace;
-  
 }
 
 li {
   display: inline;
-  
 }
 
 ul li a {
@@ -39,12 +36,11 @@ ul li a {
   color: aliceblue;
   text-decoration: none;
   padding: 2%;
-
 }
 
 header {
   width: 100%;
-  background: linear-gradient(to right, #1f1f21, #3E33FF, #b25e6f);
+  background: linear-gradient(to right, #1f1f21, #3e33ff, #b25e6f);
   display: flex;
   flex-direction: row;
 }
@@ -112,98 +108,79 @@ a:hover {
 }
 
 
-
-
-
-
 .carrossel {
-	align-items: center;
-	display: flex;
-height: 100px;
+  align-items: center;
+  display: flex;
+  height: 100px;
   width: 100vw;
-	justify-content: center;
-
+  justify-content: center;
 }
 
 .white-gradient {
-	background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 .slider {
-
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-	height: 100px;
-	margin: auto;
-	overflow: hidden;
-	position: relative;
-	width: 100vw;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
   object-fit: cover;
 }
 
 .slider::before,
 .slider::after {
-	content: "";
-	height: 120px;
-	position: absolute;
-	width: 250px;
-	z-index: 2;
+  content: "";
+  height: 120px;
+  position: absolute;
+  width: 250px;
+  z-index: 2;
 }
 
 .slider::after {
-	right: 0;
-	top: 0;
-	transform: rotateZ(180deg);
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
 }
 
 .slider::before {
-	left: 0;
-	top: 0;
+  left: 0;
+  top: 0;
 }
 
 .slide-track {
-	animation: scroll 40s linear infinite;
-	display: flex;
-	width: calc(250px * 5);
-
-
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 5);
 }
 
 .slide {
-	height: 120px;
-
-  
-
+  height: 120px;
 }
 
-.slide img{
-
-
+.slide img {
   object-fit: cover;
-width: min-content;
+  width: min-content;
 }
 
 @keyframes scroll {
-	0% {
-		transform: translateX(0);
-	}
+  0% {
+    transform: translateX(0);
+  }
 
-	100% {
-		transform: translateX(calc(-250px * 7));
-	}
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
 }
-
-
-
-
-
-
-
-
 
 .texto1 {
   background-image: url("./img/26021-kosmos-astronomicheskij_obekt-tumannost-galaktika-vselennaya-3840x2160.jpg");
-
-
 
   background-size: cover;
   height: 100%;
@@ -215,7 +192,7 @@ width: min-content;
   text-align: center;
   font-size: 300%;
 
-  font-family: 'Bungee Shade', sans-serif;
+  font-family: "Bungee Shade", sans-serif;
 }
 
 .img {
@@ -231,7 +208,6 @@ width: min-content;
 .texto2 {
   background-image: url("./img/cosmos2.jpg");
 
-
   background-size: cover;
   height: 100%;
   color: aliceblue;
@@ -241,48 +217,67 @@ width: min-content;
   align-items: center !important;
   text-align: center;
   font-size: 300%;
-margin-bottom: 6%;
-  font-family: 'Bungee Shade', sans-serif;
+  margin-bottom: 6%;
+  font-family: "Bungee Shade", sans-serif;
 }
 
-
-.blogNoticias{
-border: 2px solid #3E33FF;
-color: aliceblue;
-padding: 3%;
-margin: 4%;
-margin-bottom: 5%;
-
-
+.blogNoticias {
+  border: 2px solid #3e33ff;
+  color: aliceblue;
+  padding: 3%;
+  margin: 4% 8% 4% 8%;
+  margin-bottom: 5%;
 }
 
-.blogNoticias h1{
-
+.blogNoticias h1 {
   font-size: 220%;
   font-family: "VT323", monospace;
   text-transform: uppercase;
+
 }
 
-.blogNoticias p{
-margin-top: 3%;
+
+
+.blogNoticias p {
+  margin-top: 3%;
   font-size: 170%;
   font-family: "VT323", monospace;
 }
 
 
+.curtir {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 3% 0;
+  justify-content: space-between;
+}
 
+.curtir h2 {
+  padding-top: 1%;
 
+}
+
+.curtir img {
+  width: 3%;
+  display: flex;
+  transition: transform 0.3s ease; 
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.curtir img:hover {
+ 
+  transform: scale(1.5); 
+  cursor: pointer; 
+}
 
 
 
 footer {
-  background: linear-gradient(to right, #1f1f21, #3E33FF, #b25e6f);;
+  background: linear-gradient(to right, #1f1f21, #3e33ff, #b25e6f);
   color: aliceblue;
-  padding: 20px 20px  25px 20px ;
+  padding: 20px 20px 25px 20px;
   text-align: center;
   margin-top: 4.5%;
-
-
 }
 
 .social-icons {
@@ -290,11 +285,7 @@ footer {
   justify-content: center;
   gap: 20px;
   text-decoration: none;
-
 }
-
-
-
 
 .social-icons a img {
   width: 30px;
@@ -305,25 +296,6 @@ footer a {
   margin: 0 1% 0 1%;
   color: aliceblue;
   text-decoration: none;
-margin: 1% 0 2% 0;
+  margin: 1% 0 2% 0;
 }
 
-
-
-
-.curtir{
-display: flex;
-flex-direction: row;
-
-}
-
-.curtir h2{
-padding-top: 1%;
-
-}
-
-.curtir img {
-
-  width: 3%;
-  justify-content: end;
-}

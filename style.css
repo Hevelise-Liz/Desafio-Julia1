@@ -10,6 +10,25 @@ body {
 .logo {
   width: 10%;
   padding: 0.5%;
+
+  @media screen and (max-width: 900px) {
+    width: 12%;
+  }
+
+  @media screen and (max-width: 650px) {
+    width: 15%;
+    height: 15%;
+  }
+
+  @media screen and (max-width: 575px) {
+    width: 17%;
+    height: 17%;
+  }
+
+  @media screen and (max-width: 516px) {
+    width: 24%;
+    height: 24%;
+  }
 }
 
 nav {
@@ -25,6 +44,16 @@ nav {
   width: 25%;
   font-size: 20px;
   font-family: "VT323", monospace;
+
+  @media screen and (max-width: 325px) {
+    width: 35%;
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 245px) {
+    width: 45%;
+    font-size: 10px;
+  }
 }
 
 li {
@@ -60,24 +89,71 @@ header {
   align-items: center;
   margin: 8% 8% 7% 8%;
   padding: 0 0 0 2%;
-
+  flex-direction: row;
   font-size: 300%;
   font-family: "VT323", monospace;
   text-transform: uppercase;
+  box-shadow: inset 0 0 0 2px #3e33ff, 10px -10px 0 -3px rgb(255, 255, 255),
+    10px -10px #f72a3b, 20px -20px 0 -3px rgb(255, 255, 255), 20px -20px #d8f05e,
+    30px -30px 0 -3px rgb(255, 255, 255), 30px -30px #824caa,
+    40px -40px 0 -3px rgb(255, 255, 255), 40px -40px #42f2a1;
 
-  box-shadow: #3e33ff 0px 0px 0px 2px inset,
-    rgb(255, 255, 255) 10px -10px 0px -3px, #f72a3b 10px -10px,
-    rgb(255, 255, 255) 20px -20px 0px -3px, #d8f05e 20px -20px,
-    rgb(255, 255, 255) 30px -30px 0px -3px, #824caa 30px -30px,
-    rgb(255, 255, 255) 40px -40px 0px -3px, #42f2a1 40px -40px;
+  @media screen and (max-width: 900px) {
+    margin: 12% 12% 8% 8%;
+  }
+
+  @media screen and (max-width: 802px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 900px) {
+    margin: 16% 16% 8% 8%;
+  }
+
+  @media screen and (max-width: 422px) {
+    font-size: 200%;
+  }
+
+  @media screen and (max-width: 350px) {
+    margin: 20% 20% 8% 8%;
+  }
+  @media screen and (max-width: 280px) {
+    font-size: 150%;
+  }
+
+  @media screen and (max-width: 217px) {
+    font-size: 120%;
+    margin: 25% 25% 8% 8%;
+  }
+
+  @media screen and (max-width: 171px) {
+    margin: 35% 35% 8% 8%;
+  }
 }
 
 .introducao p {
   width: 40%;
+
+  @media screen and (max-width: 1230px) {
+    padding: 6% 0 6% 0;
+  }
+
+  @media screen and (max-width: 802px) {
+    width: 80%;
+  }
 }
 
 .introducao img {
   width: 40%;
+
+  @media screen and (max-width: 802px) {
+    padding-bottom: 8%;
+    width: 50%;
+  }
+
+  @media screen and (max-width: 802px) {
+    width: 70%;
+  }
 }
 
 p a {
@@ -94,7 +170,7 @@ a:hover {
   align-items: center;
   display: flex;
   height: 100px;
-  width: 100vw;
+  width: 98.5vw;
   justify-content: center;
 }
 
@@ -175,6 +251,18 @@ a:hover {
   font-size: 300%;
 
   font-family: "Bungee Shade", sans-serif;
+
+  @media screen and (max-width: 422px) {
+    font-size: 200%;
+  }
+
+  @media screen and (max-width: 280px) {
+    font-size: 150%;
+  }
+
+  @media screen and (max-width: 217px) {
+    font-size: 120%;
+  }
 }
 
 .img {
@@ -185,6 +273,10 @@ a:hover {
   background-attachment: fixed;
   height: 100vh !important;
   width: 100%;
+
+  @media screen and (max-width: 280px) {
+    height: 50vh !important;
+  }
 }
 
 .texto2 {
@@ -201,6 +293,18 @@ a:hover {
   font-size: 300%;
   margin-bottom: 6%;
   font-family: "Bungee Shade", sans-serif;
+
+  @media screen and (max-width: 422px) {
+    font-size: 200%;
+  }
+
+  @media screen and (max-width: 280px) {
+    font-size: 150%;
+  }
+
+  @media screen and (max-width: 217px) {
+    font-size: 120%;
+  }
 }
 
 .blogNoticias {
@@ -215,12 +319,30 @@ a:hover {
   font-size: 220%;
   font-family: "VT323", monospace;
   text-transform: uppercase;
+
+  @media screen and (max-width: 280px) {
+    font-size: 150%;
+  }
+
+  @media screen and (max-width: 217px) {
+    font-size: 120%;
+    margin: 5% 2% 5% 2%;
+  }
 }
 
 .blogNoticias p {
   margin-top: 3%;
   font-size: 170%;
   font-family: "VT323", monospace;
+
+  @media screen and (max-width: 280px) {
+    font-size: 130%;
+  }
+
+  @media screen and (max-width: 217px) {
+    font-size: 100%;
+    margin: 5% 2% 5% 2%;
+  }
 }
 
 .curtir {
@@ -239,6 +361,14 @@ a:hover {
   display: flex;
   transition: transform 0.3s ease;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+
+  @media screen and (max-width: 760px) {
+    width: 5%;
+  }
+
+  @media screen and (max-width: 420px) {
+    width: 8%;
+  }
 }
 
 .curtir img:hover {
@@ -271,4 +401,30 @@ footer a {
   color: aliceblue;
   text-decoration: none;
   margin: 1% 0 2% 0;
+}
+
+::-webkit-scrollbar {
+  width: 4px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3e33ff;
+ 
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+}
+
+::-moz-scrollbar {
+  width: 4px;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #3e33ff;
+ 
+}
+
+::-moz-scrollbar-track {
+  background-color: #f1f1f1;
 }
